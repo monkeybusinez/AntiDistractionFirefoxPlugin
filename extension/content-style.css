@@ -1,0 +1,47 @@
+/* content-style.css */
+
+body {
+  background-color: lightblue !important;
+}
+
+/* Example: Change the font color of headings */
+h1, h2, h3, h4, h5, h6, #video-title {
+  color: lime !important;
+}
+
+.ytd-thumbnail{
+	/*display: none !important;*/
+}
+
+/*.ytd-rich-grid-media{
+	display: none !important;
+}*/
+
+
+.ytd-rich-grid-media[rich-grid-thumbnail]{
+	display: none !important;
+}
+
+.ytd-rich-grid-row{
+	display: inline-block !important;
+	width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.ytd-rich-shelf-renderer{
+	display: none !important;
+}
+
+/*yt-img-shadow{
+	display: none !important;
+}*/
+
+ytd-playlist-thumbnail{
+	display: none !important;
+}
+
+ytd-rich-grid-media{
+	padding-left: 100px;
+	max-width: 100%;
+}

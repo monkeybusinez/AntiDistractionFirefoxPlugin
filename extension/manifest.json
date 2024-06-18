@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube List View",
+  "version": "1.0",
+  "description": "List View for Youtube",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+        "16": "icons/yt_plugin.png",
+        "48": "icons/yt_plugin_s.png"
+    }
+  },
+  "icons": {
+    "16": "icons/yt_plugin.png",
+    "48": "icons/yt_plugin_s.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["content-style.css"]
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "yt_plugin@backshift.co.uk"
+    }
+  }
+}
